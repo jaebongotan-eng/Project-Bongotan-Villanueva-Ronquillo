@@ -1,1 +1,1 @@
-Our revised project involves making a program to help other people get the stats of nba players including the player's PER using a dictionary. Our project aims to make a python program that helps others learn more about the nba and what is happening in the league right now.
+Our revised project involves making a program to help other people get the stats of the top 25 nba players including the player's PER using a json file. Our project aims to make a python program that helps others learn more about the nba and what is happening in the league right now.
