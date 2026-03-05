@@ -48,5 +48,87 @@
     "Blk": 2.9,
     "Tov": 2.6,
     "Eff": 29.5
+  },
+  
+  {
+    "Name": "Luka Doncic",
+    "Team": "Los Angeles Lakers",
+    "Pts": 32.4,
+    "FGM": 10.3,
+    "FGA": 21.8,
+    "FG%": 47.3,
+    "OREB": 0.7,
+    "DREB": 7.0,
+    "REB": 7.7,
+    "Ast": 8.6,
+    "Stl": 1.4,
+    "Blk": 0.5,
+    "Tov": 4.0,
+    "Eff": 32.7
+  },
+  
+  {
+    "Name": "Giannis Antetokounmpo",
+    "Team": "Milwuakee Bucks",
+    "Pts": 23.4,
+    "FGM": 8.0,
+    "FGA": 15.9,
+    "FG%": 50.1,
+    "OREB": 1.9,
+    "DREB": 9.2,
+    "REB": 11.1,
+    "Ast": 2.9,
+    "Stl": 1.0,
+    "Blk": 2.9,
+    "Tov": 2.6,
+    "Eff": 29.5
+  }
+  {
+    "Name": "Anthony Edwards",
+    "Team": "San Antonio Spurs",
+    "Pts": 23.4,
+    "FGM": 8.0,
+    "FGA": 15.9,
+    "FG%": 50.1,
+    "OREB": 1.9,
+    "DREB": 9.2,
+    "REB": 11.1,
+    "Ast": 2.9,
+    "Stl": 1.0,
+    "Blk": 2.9,
+    "Tov": 2.6,
+    "Eff": 29.5
+  }
+  {
+    "Name": "Kawhi Leonard",
+    "Team": "Los Angeles Clippers",
+    "Pts": 23.4,
+    "FGM": 8.0,
+    "FGA": 15.9,
+    "FG%": 50.1,
+    "OREB": 1.9,
+    "DREB": 9.2,
+    "REB": 11.1,
+    "Ast": 2.9,
+    "Stl": 1.0,
+    "Blk": 2.9,
+    "Tov": 2.6,
+    "Eff": 29.5
+  }
+  {
+    "Name": "Stephen Curry",
+    "Team": "Golden State Warriors",
+    "Pts": 23.4,
+    "FGM": 8.0,
+    "FGA": 15.9,
+    "FG%": 50.1,
+    "OREB": 1.9,
+    "DREB": 9.2,
+    "REB": 11.1,
+    "Ast": 2.9,
+    "Stl": 1.0,
+    "Blk": 2.9,
+    "Tov": 2.6,
+    "Eff": 29.5
   }
 ]
