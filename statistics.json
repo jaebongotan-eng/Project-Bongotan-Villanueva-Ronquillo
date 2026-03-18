@@ -205,7 +205,7 @@
     "Blk": 2.9,
     "Tov": 2.6,
     "Eff": 29.5,
-    "Rank": 11
+    "Rank": 12
   },
   {
     "Name": "Tyrese Maxey",
@@ -222,7 +222,7 @@
     "Blk": 2.9,
     "Tov": 2.6,
     "Eff": 29.5,
-    "Rank": 11
+    "Rank": 13
   },
   {
     "Name": "Kevin Durant",
@@ -239,7 +239,7 @@
     "Blk": 2.9,
     "Tov": 2.6,
     "Eff": 29.5,
-    "Rank": 11
+    "Rank": 14
   },
   {
     "Name": "Jamal Murray",
@@ -256,7 +256,7 @@
     "Blk": 2.9,
     "Tov": 2.6,
     "Eff": 29.5,
-    "Rank": 11
+    "Rank": 15
   },
   {
     "Name": "Devin Booker",
@@ -273,8 +273,8 @@
     "Blk": 2.9,
     "Tov": 2.6,
     "Eff": 29.5,
-    "Rank": 11
-  },,
+    "Rank": 16
+  },
   {
     "Name": "Scottie Barnes",
     "Team": "Golden State Warriors",
@@ -290,7 +290,7 @@
     "Blk": 2.9,
     "Tov": 2.6,
     "Eff": 29.5,
-    "Rank": 11
+    "Rank": 17
   },
   {
     "Name": "James Harden",
@@ -307,7 +307,7 @@
     "Blk": 2.9,
     "Tov": 2.6,
     "Eff": 29.5,
-    "Rank": 11
+    "Rank": 18
   },
   {
     "Name": "Deni Avdija",
@@ -324,7 +324,7 @@
     "Blk": 2.9,
     "Tov": 2.6,
     "Eff": 29.5,
-    "Rank": 11
+    "Rank": 19
   },
   {
     "Name": "Jalen Johnson",
@@ -341,7 +341,7 @@
     "Blk": 2.9,
     "Tov": 2.6,
     "Eff": 29.5,
-    "Rank": 11
+    "Rank": 20
   },
   {
     "Name": "Chet Holmgren",
@@ -358,7 +358,7 @@
     "Blk": 2.9,
     "Tov": 2.6,
     "Eff": 29.5,
-    "Rank": 11
+    "Rank": 21
   },
   {
     "Name": "Aleperen Sengun",
@@ -375,7 +375,7 @@
     "Blk": 2.9,
     "Tov": 2.6,
     "Eff": 29.5,
-    "Rank": 11
+    "Rank": 22
   },
   {
     "Name": "Evan Mobley",
@@ -392,7 +392,7 @@
     "Blk": 2.9,
     "Tov": 2.6,
     "Eff": 29.5,
-    "Rank": 11
+    "Rank": 23
   },
   {
     "Name": "Paskal Siakam",
@@ -409,7 +409,7 @@
     "Blk": 2.9,
     "Tov": 2.6,
     "Eff": 29.5,
-    "Rank": 11
+    "Rank": 24
   },
   {
     "Name": "Lebron James",
@@ -426,7 +426,7 @@
     "Blk": 2.9,
     "Tov": 2.6,
     "Eff": 29.5,
-    "Rank": 11
+    "Rank": 25
   }
 
 
