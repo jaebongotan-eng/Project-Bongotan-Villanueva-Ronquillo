@@ -8,7 +8,6 @@ try:
 
 # Menu
     print("                                                               WELCOME TO BASKETBALL PLAYER STATISTICS RANKER")
-    print("  ")
     print("                                \nINSTRUCTIONS:")
     print("                                                    THIS PROGRAM HELPS YOU EXAMINE THE TOP 25 PLAYERS IN THE NBA RIGHT NOW.")
     print("                                                        THE PROGRAM WILL ASK YOU TO INPUT A RANK OF A PLAYER OUT OF 25.")
