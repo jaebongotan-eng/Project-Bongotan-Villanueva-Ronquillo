@@ -14,7 +14,6 @@ try:
     print("                                       THE PROGRAM WILL THEN PRINT THE STATISTICS OF THAT PLAYER INCLUDING HIS PERFORMANCE EFFICIENCY RATING AND HIS NAME.")
     print("                                                 THE PROGRAM WILL THEN RANK THE PLAYER ACCORDING TO THE PLAYER'S PERFORMANCE EFFICIENCY RATING.")
 
-    choice = int(input("\nEnter the rank of the player you want to examine in the top 25: "))
 
     player_rank = []
     for player in data:
@@ -46,136 +45,141 @@ try:
     Top_23 = min(player_rank) + 22
     Top_24 = min(player_rank) + 23
     Top_25 = max(player_rank)
+    while True:
+        choice = input("\nEnter the rank of the player you want to examine in the top 25 (type 'exit' to leave the search engine): ")
 
 # Multiple Choice System
-    if choice == 1:
-        for player in data:
-            if player["Rank"] == Top_1:
-                for x in player.items():
-                    print(x)
-    elif choice == 2:
-        for player in data:
-            if player["Rank"] == Top_2:
-                for x in player.items():
-                    print(x)
-    elif choice == 3:
-        for player in data:
-            if player["Rank"] == Top_3:
-                for x in player.items():
-                    print(x)
-    elif choice == 4:
-        for player in data:
-            if player["Rank"] == Top_4:
-                for x in player.items():
-                    print(x)
-    elif choice == 5:
-        for player in data:
-            if player["Rank"] == Top_5:
-                for x in player.items():
-                    print(x)
-    elif choice == 6:
-        for player in data:
-            if player["Rank"] == Top_6:
-                for x in player.items():
-                    print(x)
-    elif choice == 7:
-        for player in data:
-            if player["Rank"] == Top_7:
-                for x in player.items():
-                    print(x)
-    elif choice == 8:
-        for player in data:
-            if player["Rank"] == Top_8:
-                for x in player.items():
-                    print(x)
-    elif choice == 9:
-        for player in data:
-            if player["Rank"] == Top_9:
-                for x in player.items():
-                    print(x)
-    elif choice == 10:
-        for player in data:
-            if player["Rank"] == Top_10:
-                for x in player.items():
-                    print(x)
-    elif choice == 11:
-        for player in data:
-            if player["Rank"] == Top_11:
-                for x in player.items():
-                    print(x)
-    elif choice == 12:
-        for player in data:
-            if player["Rank"] == Top_12:
-                for x in player.items():
-                    print(x)
-    elif choice == 13:
-        for player in data:
-            if player["Rank"] == Top_13:
-                for x in player.items():
-                    print(x)
-    elif choice == 14:
-        for player in data:
-            if player["Rank"] == Top_14:
-                for x in player.items():
-                    print(x)
-    elif choice == 15:
-        for player in data:
-            if player["Rank"] == Top_15:
-                for x in player.items():
-                    print(x)
-    elif choice == 16:
-        for player in data:
-            if player["Rank"] == Top_16:
-                for x in player.items():
-                    print(x)
-    elif choice == 17:
-        for player in data:
-            if player["Rank"] == Top_17:
-                for x in player.items():
-                    print(x)
-    elif choice == 18:
-        for player in data:
-            if player["Rank"] == Top_18:
-                for x in player.items():
-                    print(x)
-    elif choice == 19:
-        for player in data:
-            if player["Rank"] == Top_19:
-                for x in player.items():
-                    print(x)
-    elif choice == 20:
-        for player in data:
-            if player["Rank"] == Top_20:
-                for x in player.items():
-                    print(x)
-    elif choice == 21:
-        for player in data:
-            if player["Rank"] == Top_21:
-                for x in player.items():
-                    print(x)
-    elif choice == 22:
-        for player in data:
-            if player["Rank"] == Top_22:
-                for x in player.items():
-                    print(x)
-    elif choice == 23:
-        for player in data:
-            if player["Rank"] == Top_23:
-                for x in player.items():
-                    print(x)
-    elif choice == 24:
-        for player in data:
-            if player["Rank"] == Top_24:
-                for x in player.items():
-                    print(x)
-    elif choice == 25:
-        for player in data:
-            if player["Rank"] == Top_25:
-                for x in player.items():
-                    print(x)
+        if choice == 'exit':
+            break
 
-    else:
-        print("Not available")
+        elif int(choice) == 1:
+            for player in data:
+                if player["Rank"] == Top_1:
+                    for x in player.items():
+                        print(x)
+        elif int(choice) == 2:
+            for player in data:
+                if player["Rank"] == Top_2:
+                    for x in player.items():
+                        print(x)
+        elif int(choice) == 3:
+            for player in data:
+                if player["Rank"] == Top_3:
+                    for x in player.items():
+                        print(x)
+        elif int(choice) == 4:
+            for player in data:
+                if player["Rank"] == Top_4:
+                    for x in player.items():
+                        print(x)
+        elif int(choice) == 5:
+            for player in data:
+                if player["Rank"] == Top_5:
+                    for x in player.items():
+                        print(x)
+        elif int(choice) == 6:
+            for player in data:
+                if player["Rank"] == Top_6:
+                    for x in player.items():
+                        print(x)
+        elif int(choice) == 7:
+            for player in data:
+                if player["Rank"] == Top_7:
+                    for x in player.items():
+                        print(x)
+        elif int(choice) == 8:
+            for player in data:
+                if player["Rank"] == Top_8:
+                    for x in player.items():
+                        print(x)
+        elif int(choice) == 9:
+            for player in data:
+                if player["Rank"] == Top_9:
+                    for x in player.items():
+                        print(x)
+        elif int(choice) == 10:
+            for player in data:
+                if player["Rank"] == Top_10:
+                    for x in player.items():
+                        print(x)
+        elif int(choice) == 11:
+            for player in data:
+                if player["Rank"] == Top_11:
+                    for x in player.items():
+                        print(x)
+        elif int(choice) == 12:
+            for player in data:
+                if player["Rank"] == Top_12:
+                    for x in player.items():
+                        print(x)
+        elif int(choice) == 13:
+            for player in data:
+                if player["Rank"] == Top_13:
+                    for x in player.items():
+                        print(x)
+        elif int(choice) == 14:
+            for player in data:
+                if player["Rank"] == Top_14:
+                    for x in player.items():
+                        print(x)
+        elif int(choice) == 15:
+            for player in data:
+                if player["Rank"] == Top_15:
+                    for x in player.items():
+                        print(x)
+        elif int(choice) == 16:
+            for player in data:
+                if player["Rank"] == Top_16:
+                    for x in player.items():
+                        print(x)
+        elif int(choice) == 17:
+            for player in data:
+                if player["Rank"] == Top_17:
+                    for x in player.items():
+                        print(x)
+        elif int(choice) == 18:
+            for player in data:
+                if player["Rank"] == Top_18:
+                    for x in player.items():
+                        print(x)
+        elif int(choice) == 19:
+            for player in data:
+                if player["Rank"] == Top_19:
+                    for x in player.items():
+                        print(x)
+        elif int(choice) == 20:
+            for player in data:
+                if player["Rank"] == Top_20:
+                    for x in player.items():
+                        print(x)
+        elif int(choice) == 21:
+            for player in data:
+                if player["Rank"] == Top_21:
+                    for x in player.items():
+                        print(x)
+        elif int(choice) == 22:
+            for player in data:
+                if player["Rank"] == Top_22:
+                    for x in player.items():
+                        print(x)
+        elif int(choice) == 23:
+            for player in data:
+                if player["Rank"] == Top_23:
+                    for x in player.items():
+                        print(x)
+        elif int(choice) == 24:
+            for player in data:
+                if player["Rank"] == Top_24:
+                    for x in player.items():
+                        print(x)
+        elif int(choice) == 25:
+            for player in data:
+                if player["Rank"] == Top_25:
+                    for x in player.items():
+                        print(x)
+
+        else:
+            print("Please enter 1-25 or 'exit' only.")
 
 
 except FileNotFoundError:
