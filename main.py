@@ -14,6 +14,7 @@ try:
     print("                                       THE PROGRAM WILL THEN PRINT THE STATISTICS OF THAT PLAYER INCLUDING HIS PERFORMANCE EFFICIENCY RATING AND HIS NAME.")
     print("                                                 THE PROGRAM WILL THEN RANK THE PLAYER ACCORDING TO THE PLAYER'S PERFORMANCE EFFICIENCY RATING.")
 
+# Uploading the JSON data to an empty list
 
     player_rank = []
     for player in data:
@@ -45,6 +46,8 @@ try:
     Top_23 = min(player_rank) + 22
     Top_24 = min(player_rank) + 23
     Top_25 = max(player_rank)
+
+# Input Validation Program
     while True:
         choice = input("\nEnter the rank of the player you want to examine in the top 25 (type 'exit' to leave the search engine): ")
 
