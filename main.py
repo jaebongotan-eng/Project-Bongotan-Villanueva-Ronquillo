@@ -7,44 +7,49 @@ try:
         data = json.load(file)
 
 # Menu
-    print("                                                                         WELCOME TO BASKETBALL PLAYER STATISTICS RANKER")
-    print("                                       \nINSTRUCTIONS:")
-    print("                                                              THIS PROGRAM HELPS YOU EXAMINE THE TOP 25 PLAYERS IN THE NBA RIGHT NOW.")
-    print("                                                                  THE PROGRAM WILL ASK YOU TO INPUT A RANK OF A PLAYER OUT OF 25.")
-    print("                                       THE PROGRAM WILL THEN PRINT THE STATISTICS OF THAT PLAYER INCLUDING HIS PERFORMANCE EFFICIENCY RATING AND HIS NAME.")
-    print("                                                 THE PROGRAM WILL THEN RANK THE PLAYER ACCORDING TO THE PLAYER'S PERFORMANCE EFFICIENCY RATING.")
-
+    print("\n|------------------------------------------------------------------------------------------------------------------------|")
+    print("| WELCOME TO BASKETBALL PLAYER STATISTICS RANKER                                                                         |")
+    print("|------------------------------------------------------------------------------------------------------------------------|")
+    print("| THIS PROGRAM HELPS YOU EXAMINE THE TOP 25 PLAYERS IN THE NBA RIGHT NOW.                                                |")
+    print("| THE PROGRAM WILL ASK YOU TO INPUT A RANK OF A PLAYER OUT OF 25.                                                        |")
+    print("| THE PROGRAM WILL THEN PRINT THE STATISTICS OF THAT PLAYER INCLUDING HIS PERFORMANCE EFFICIENCY RATING AND HIS NAME.    |")
+    print("| THE PROGRAM WILL THEN RANK THE PLAYER ACCORDING TO THE PLAYER'S PERFORMANCE EFFICIENCY RATING.                         |")
+    print("|------------------------------------------------------------------------------------------------------------------------|")
 # Uploading the JSON data to an empty list
     player_rank = []
     for player in data:
         player_rank.append(player["Rank"])
 
 # Choice Variables
-    Top_1 = min(player_rank)
-    Top_2 = min(player_rank) + 1
-    Top_3 = min(player_rank) + 2
-    Top_4 = min(player_rank) + 3
-    Top_5 = min(player_rank) + 4
-    Top_6 = min(player_rank) + 5
-    Top_7 = min(player_rank) + 6
-    Top_8 = min(player_rank) + 7
-    Top_9 = min(player_rank) + 8
-    Top_10 = min(player_rank) + 9
-    Top_11 = min(player_rank) + 10
-    Top_12 = min(player_rank) + 11
-    Top_13 = min(player_rank) + 12
-    Top_14 = min(player_rank) + 13
-    Top_15 = min(player_rank) + 14
-    Top_16 = min(player_rank) + 15
-    Top_17 = min(player_rank) + 16
-    Top_18 = min(player_rank) + 17
-    Top_19 = min(player_rank) + 18
-    Top_20 = min(player_rank) + 19
-    Top_21 = min(player_rank) + 20
-    Top_22 = min(player_rank) + 21
-    Top_23 = min(player_rank) + 22
-    Top_24 = min(player_rank) + 23
-    Top_25 = max(player_rank)
+    # Sorts The Ranks Of The Players
+    player_rank.sort()
+    # Puts The Sorted Ranks In Variables
+    Top_1 = player_rank[0]
+    Top_2 = player_rank[1]
+    Top_3 = player_rank[2]
+    Top_4 = player_rank[3]
+    Top_5 = player_rank[4]
+    Top_6 = player_rank[5]
+    Top_7 = player_rank[6]
+    Top_8 = player_rank[7]
+    Top_9 = player_rank[8]
+    Top_10 = player_rank[9]
+    Top_11 = player_rank[10]
+    Top_12 = player_rank[11]
+    Top_13 = player_rank[12]
+    Top_14 = player_rank[13]
+    Top_15 = player_rank[14]
+    Top_16 = player_rank[15]
+    Top_17 = player_rank[16]
+    Top_18 = player_rank[17]
+    Top_19 = player_rank[18]
+    Top_20 = player_rank[19]
+    Top_21 = player_rank[20]
+    Top_22 = player_rank[21]
+    Top_23 = player_rank[22]
+    Top_24 = player_rank[23]
+    Top_25 = player_rank[24]
+
 
 # Input Validation Program
     while True:
@@ -53,136 +58,133 @@ try:
 # Multiple Choice System
         if choice == 'exit':
             break
-
-        elif int(choice) == 1:
+        elif choice == '1':
             for player in data:
                 if player["Rank"] == Top_1:
                     for x in player.items():
                         print(x)
-        elif int(choice) == 2:
+        elif choice == '2':
             for player in data:
                 if player["Rank"] == Top_2:
                     for x in player.items():
                         print(x)
-        elif int(choice) == 3:
+        elif choice == '3':
             for player in data:
                 if player["Rank"] == Top_3:
                     for x in player.items():
                         print(x)
-        elif int(choice) == 4:
+        elif choice == '4':
             for player in data:
                 if player["Rank"] == Top_4:
                     for x in player.items():
                         print(x)
-        elif int(choice) == 5:
+        elif choice == '5':
             for player in data:
                 if player["Rank"] == Top_5:
                     for x in player.items():
                         print(x)
-        elif int(choice) == 6:
+        elif choice == '6':
             for player in data:
                 if player["Rank"] == Top_6:
                     for x in player.items():
                         print(x)
-        elif int(choice) == 7:
+        elif choice == '7':
             for player in data:
                 if player["Rank"] == Top_7:
                     for x in player.items():
                         print(x)
-        elif int(choice) == 8:
+        elif choice == '8':
             for player in data:
                 if player["Rank"] == Top_8:
                     for x in player.items():
                         print(x)
-        elif int(choice) == 9:
+        elif choice == '9':
             for player in data:
                 if player["Rank"] == Top_9:
                     for x in player.items():
                         print(x)
-        elif int(choice) == 10:
+        elif choice == '10':
             for player in data:
                 if player["Rank"] == Top_10:
                     for x in player.items():
                         print(x)
-        elif int(choice) == 11:
+        elif choice == '11':
             for player in data:
                 if player["Rank"] == Top_11:
                     for x in player.items():
                         print(x)
-        elif int(choice) == 12:
+        elif choice == '12':
             for player in data:
                 if player["Rank"] == Top_12:
                     for x in player.items():
                         print(x)
-        elif int(choice) == 13:
+        elif choice == '13':
             for player in data:
                 if player["Rank"] == Top_13:
                     for x in player.items():
                         print(x)
-        elif int(choice) == 14:
+        elif choice == '14':
             for player in data:
                 if player["Rank"] == Top_14:
                     for x in player.items():
                         print(x)
-        elif int(choice) == 15:
+        elif choice == '15':
             for player in data:
                 if player["Rank"] == Top_15:
                     for x in player.items():
                         print(x)
-        elif int(choice) == 16:
+        elif choice == '16':
             for player in data:
                 if player["Rank"] == Top_16:
                     for x in player.items():
                         print(x)
-        elif int(choice) == 17:
+        elif choice == '17':
             for player in data:
                 if player["Rank"] == Top_17:
                     for x in player.items():
                         print(x)
-        elif int(choice) == 18:
+        elif choice == '18':
             for player in data:
                 if player["Rank"] == Top_18:
                     for x in player.items():
                         print(x)
-        elif int(choice) == 19:
+        elif choice == '19':
             for player in data:
                 if player["Rank"] == Top_19:
                     for x in player.items():
                         print(x)
-        elif int(choice) == 20:
+        elif choice == '20':
             for player in data:
                 if player["Rank"] == Top_20:
                     for x in player.items():
                         print(x)
-        elif int(choice) == 21:
+        elif choice == '21':
             for player in data:
                 if player["Rank"] == Top_21:
                     for x in player.items():
                         print(x)
-        elif int(choice) == 22:
+        elif choice == '22':
             for player in data:
                 if player["Rank"] == Top_22:
                     for x in player.items():
                         print(x)
-        elif int(choice) == 23:
+        elif choice == '23':
             for player in data:
                 if player["Rank"] == Top_23:
                     for x in player.items():
                         print(x)
-        elif int(choice) == 24:
+        elif choice == "24":
             for player in data:
                 if player["Rank"] == Top_24:
                     for x in player.items():
                         print(x)
-        elif int(choice) == 25:
+        elif choice == "25":
             for player in data:
                 if player["Rank"] == Top_25:
                     for x in player.items():
                         print(x)
-
         else:
-            print("Please enter 1-25 or 'exit' only.")
-
+            print("Please enter 1-25 or 'exit' only")
 
 except FileNotFoundError:
     print("Error: The file 'data.json' was not found.")
