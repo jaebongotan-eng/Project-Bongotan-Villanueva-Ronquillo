@@ -15,7 +15,6 @@ try:
     print("                                                 THE PROGRAM WILL THEN RANK THE PLAYER ACCORDING TO THE PLAYER'S PERFORMANCE EFFICIENCY RATING.")
 
 # Uploading the JSON data to an empty list
-
     player_rank = []
     for player in data:
         player_rank.append(player["Rank"])
