@@ -186,6 +186,24 @@ try:
         else:
             print("Please enter 1-25 or 'exit' only")
 
+        print("Ranking:")
+        for player in data:
+            if choice == player["Rank"]:
+                if player["PER"] >= 30.0:
+                    print("All-Time Great")
+                elif player["PER"] >= 27.5:
+                    print("MVP Candidate")
+                elif player["PER"] >= 25.0:
+                    print("Strong All-Star")
+                elif player["PER"] >= 20.0:
+                    print("All-Star Boarder")
+                elif player["PER"] >= 15.0:
+                    print("League Average")
+                elif player["PER"] >= 10.0:
+                    print("Rotation Player")
+                elif player["PER"] <= 9.9:
+                    print("Bench Player/G-League Player")
+
 except FileNotFoundError:
     print("Error: The file 'data.json' was not found.")
 except json.JSONDecodeError as e:
