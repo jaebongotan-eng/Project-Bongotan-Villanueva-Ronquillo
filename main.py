@@ -5,14 +5,14 @@ try:
         # Loading the JSON file
         data = json.load(file)
 # Menu
-    print("\n|------------------------------------------------------------------------------------------------------------------------|")
-    print("| WELCOME TO BASKETBALL PLAYER STATISTICS RANKER                                                                         |")
-    print("|------------------------------------------------------------------------------------------------------------------------|")
-    print("| THIS PROGRAM HELPS YOU EXAMINE THE TOP 25 PLAYERS IN THE NBA RIGHT NOW.                                                |")
-    print("| THE PROGRAM WILL ASK YOU TO INPUT A RANK OF A PLAYER OUT OF 25.                                                        |")
-    print("| THE PROGRAM WILL THEN PRINT THE STATISTICS OF THAT PLAYER INCLUDING HIS PERFORMANCE EFFICIENCY RATING AND HIS NAME.    |")
-    print("| THE PROGRAM WILL THEN RANK THE PLAYER ACCORDING TO THE PLAYER'S PERFORMANCE EFFICIENCY RATING.                         |")
-    print("|------------------------------------------------------------------------------------------------------------------------|")
+        print("\n|------------------------------------------------------------------------------------------------------------------------|")
+        print("| WELCOME TO BASKETBALL PLAYER STATISTICS RANKER                                                                         |")
+        print("|------------------------------------------------------------------------------------------------------------------------|")
+        print("| THIS PROGRAM HELPS YOU EXAMINE THE TOP 25 PLAYERS IN THE NBA RIGHT NOW.                                                |")
+        print("| THE PROGRAM WILL ASK YOU TO INPUT A RANK OF A PLAYER OUT OF 25.                                                        |")
+        print("| THE PROGRAM WILL THEN PRINT THE STATISTICS OF THAT PLAYER INCLUDING HIS PERFORMANCE EFFICIENCY RATING AND HIS NAME.    |")
+        print("| THE PROGRAM WILL THEN RANK THE PLAYER ACCORDING TO THE PLAYER'S PERFORMANCE EFFICIENCY RATING.                         |")
+        print("|------------------------------------------------------------------------------------------------------------------------|")
 # Uploading the JSON data to an empty list
     player_rank = []
     for player in data:
@@ -120,31 +120,121 @@ try:
                 if player["Rank"] == Top_4:
                     for x in player.items():
                         print(x)
+            print("\nRanking:")
+            if player_PER[3] >= 30.0:
+                print("All-Time Great")
+            elif player_PER[3] >= 27.5:
+                print("MVP Candidate")
+            elif player_PER[3] >= 25.0:
+                print("Strong All-Star")
+            elif player_PER[3] >= 20.0:
+                print("All-Star Boarder")
+            elif player_PER[3] >= 15.0:
+                print("League Average")
+            elif player_PER[3] >= 10.0:
+                print("Rotation Player")
+            elif player_PER[3] <= 9.9:
+                print("Bench Player/G-League Player")
         elif choice == '5':
             for player in data:
                 if player["Rank"] == Top_5:
                     for x in player.items():
                         print(x)
+            print("\nRanking:")
+            if player_PER[4] >= 30.0:
+                print("All-Time Great")
+            elif player_PER[4] >= 27.5:
+                print("MVP Candidate")
+            elif player_PER[4] >= 25.0:
+                print("Strong All-Star")
+            elif player_PER[4] >= 20.0:
+                print("All-Star Boarder")
+            elif player_PER[4] >= 15.0:
+                print("League Average")
+            elif player_PER[4] >= 10.0:
+                print("Rotation Player")
+            elif player_PER[4] <= 9.9:
+                print("Bench Player/G-League Player")
         elif choice == '6':
             for player in data:
                 if player["Rank"] == Top_6:
                     for x in player.items():
                         print(x)
+            print("\nRanking:")
+            if player_PER[5] >= 30.0:
+                print("All-Time Great")
+            elif player_PER[5] >= 27.5:
+                print("MVP Candidate")
+            elif player_PER[5] >= 25.0:
+                print("Strong All-Star")
+            elif player_PER[5] >= 20.0:
+                print("All-Star Boarder")
+            elif player_PER[5] >= 15.0:
+                print("League Average")
+            elif player_PER[5] >= 10.0:
+                print("Rotation Player")
+            elif player_PER[5] <= 9.9:
+                print("Bench Player/G-League Player")
         elif choice == '7':
             for player in data:
                 if player["Rank"] == Top_7:
                     for x in player.items():
                         print(x)
+            print("\nRanking:")
+            if player_PER[6] >= 30.0:
+                print("All-Time Great")
+            elif player_PER[6] >= 27.5:
+                print("MVP Candidate")
+            elif player_PER[6] >= 25.0:
+                print("Strong All-Star")
+            elif player_PER[6] >= 20.0:
+                print("All-Star Boarder")
+            elif player_PER[6] >= 15.0:
+                print("League Average")
+            elif player_PER[6] >= 10.0:
+                print("Rotation Player")
+            elif player_PER[6] <= 9.9:
+                print("Bench Player/G-League Player")
         elif choice == '8':
             for player in data:
                 if player["Rank"] == Top_8:
                     for x in player.items():
                         print(x)
+            print("\nRanking:")
+            if player_PER[7] >= 30.0:
+                print("All-Time Great")
+            elif player_PER[7] >= 27.5:
+                print("MVP Candidate")
+            elif player_PER[7] >= 25.0:
+                print("Strong All-Star")
+            elif player_PER[7] >= 20.0:
+                print("All-Star Boarder")
+            elif player_PER[7] >= 15.0:
+                print("League Average")
+            elif player_PER[7] >= 10.0:
+                print("Rotation Player")
+            elif player_PER[7] <= 9.9:
+                print("Bench Player/G-League Player")
         elif choice == '9':
             for player in data:
                 if player["Rank"] == Top_9:
                     for x in player.items():
                         print(x)
+            print("\nRanking:")
+            if player_PER[8] >= 30.0:
+                print("All-Time Great")
+            elif player_PER[8] >= 27.5:
+                print("MVP Candidate")
+            elif player_PER[8] >= 25.0:
+                print("Strong All-Star")
+            elif player_PER[8] >= 20.0:
+                print("All-Star Boarder")
+            elif player_PER[8] >= 15.0:
+                print("League Average")
+            elif player_PER[8] >= 10.0:
+                print("Rotation Player")
+            elif player_PER[8] <= 9.9:
+                print("Bench Player/G-League Player")
         elif choice == '10':
             for player in data:
                 if player["Rank"] == Top_10:
