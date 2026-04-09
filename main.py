@@ -230,19 +230,19 @@ try:
                     for x in player.items():
                         print(x)
             print("\nRanking:")
-            if player_PER[8] >= 30.0:
+            if player_PER[9] >= 30.0:
                 print("All-Time Great")
-            elif player_PER[8] >= 27.5:
+            elif player_PER[9] >= 27.5:
                 print("MVP Candidate")
-            elif player_PER[8] >= 25.0:
+            elif player_PER[9] >= 25.0:
                 print("Strong All-Star")
-            elif player_PER[8] >= 20.0:
+            elif player_PER[9] >= 20.0:
                 print("All-Star Boarder")
-            elif player_PER[8] >= 15.0:
+            elif player_PER[9] >= 15.0:
                 print("League Average")
-            elif player_PER[8] >= 10.0:
+            elif player_PER[9] >= 10.0:
                 print("Rotation Player")
-            elif player_PER[8] <= 9.9:
+            elif player_PER[9] <= 9.9:
                 print("Bench Player/G-League Player")
       
         elif choice == '10':
@@ -251,19 +251,19 @@ try:
                     for x in player.items():
                         print(x)
             print("\nRanking:")
-            if player_PER[8] >= 30.0:
+            if player_PER[10] >= 30.0:
                 print("All-Time Great")
-            elif player_PER[8] >= 27.5:
+            elif player_PER[10] >= 27.5:
                 print("MVP Candidate")
-            elif player_PER[8] >= 25.0:
+            elif player_PER[10] >= 25.0:
                 print("Strong All-Star")
-            elif player_PER[8] >= 20.0:
+            elif player_PER[10] >= 20.0:
                 print("All-Star Boarder")
-            elif player_PER[8] >= 15.0:
+            elif player_PER[10] >= 15.0:
                 print("League Average")
-            elif player_PER[8] >= 10.0:
+            elif player_PER[10] >= 10.0:
                 print("Rotation Player")
-            elif player_PER[8] <= 9.9:
+            elif player_PER[10] <= 9.9:
                 print("Bench Player/G-League Player")
        
         elif choice == '11':
@@ -272,19 +272,19 @@ try:
                     for x in player.items():
                         print(x)
             print("\nRanking:")
-            if player_PER[8] >= 30.0:
+            if player_PER[11] >= 30.0:
                 print("All-Time Great")
-            elif player_PER[8] >= 27.5:
+            elif player_PER[11] >= 27.5:
                 print("MVP Candidate")
-            elif player_PER[8] >= 25.0:
+            elif player_PER[11] >= 25.0:
                 print("Strong All-Star")
-            elif player_PER[8] >= 20.0:
+            elif player_PER[11] >= 20.0:
                 print("All-Star Boarder")
-            elif player_PER[8] >= 15.0:
+            elif player_PER[11] >= 15.0:
                 print("League Average")
-            elif player_PER[8] >= 10.0:
+            elif player_PER[11] >= 10.0:
                 print("Rotation Player")
-            elif player_PER[8] <= 9.9:
+            elif player_PER[11] <= 9.9:
                 print("Bench Player/G-League Player")
        
         elif choice == '12':
@@ -293,19 +293,19 @@ try:
                     for x in player.items():
                         print(x)
             print("\nRanking:")
-            if player_PER[8] >= 30.0:
+            if player_PER[12] >= 30.0:
                 print("All-Time Great")
-            elif player_PER[8] >= 27.5:
+            elif player_PER[12] >= 27.5:
                 print("MVP Candidate")
-            elif player_PER[8] >= 25.0:
+            elif player_PER[12] >= 25.0:
                 print("Strong All-Star")
-            elif player_PER[8] >= 20.0:
+            elif player_PER[12] >= 20.0:
                 print("All-Star Boarder")
-            elif player_PER[8] >= 15.0:
+            elif player_PER[12] >= 15.0:
                 print("League Average")
-            elif player_PER[8] >= 10.0:
+            elif player_PER[12] >= 10.0:
                 print("Rotation Player")
-            elif player_PER[8] <= 9.9:
+            elif player_PER[12] <= 9.9:
                 print("Bench Player/G-League Player")
         
         elif choice == '13':
@@ -314,19 +314,19 @@ try:
                     for x in player.items():
                         print(x)
             print("\nRanking:")
-            if player_PER[8] >= 30.0:
+            if player_PER[13] >= 30.0:
                 print("All-Time Great")
-            elif player_PER[8] >= 27.5:
+            elif player_PER[13] >= 27.5:
                 print("MVP Candidate")
-            elif player_PER[8] >= 25.0:
+            elif player_PER[13] >= 25.0:
                 print("Strong All-Star")
-            elif player_PER[8] >= 20.0:
+            elif player_PER[13] >= 20.0:
                 print("All-Star Boarder")
-            elif player_PER[8] >= 15.0:
+            elif player_PER[13] >= 15.0:
                 print("League Average")
-            elif player_PER[8] >= 10.0:
+            elif player_PER[13] >= 10.0:
                 print("Rotation Player")
-            elif player_PER[8] <= 9.9:
+            elif player_PER[13] <= 9.9:
                 print("Bench Player/G-League Player")
       
         elif choice == '14':
@@ -335,19 +335,19 @@ try:
                     for x in player.items():
                         print(x)
             print("\nRanking:")
-            if player_PER[8] >= 30.0:
+            if player_PER[14] >= 30.0:
                 print("All-Time Great")
-            elif player_PER[8] >= 27.5:
+            elif player_PER[14] >= 27.5:
                 print("MVP Candidate")
-            elif player_PER[8] >= 25.0:
+            elif player_PER[14] >= 25.0:
                 print("Strong All-Star")
-            elif player_PER[8] >= 20.0:
+            elif player_PER[14] >= 20.0:
                 print("All-Star Boarder")
-            elif player_PER[8] >= 15.0:
+            elif player_PER[14] >= 15.0:
                 print("League Average")
-            elif player_PER[8] >= 10.0:
+            elif player_PER[14] >= 10.0:
                 print("Rotation Player")
-            elif player_PER[8] <= 9.9:
+            elif player_PER[14] <= 9.9:
                 print("Bench Player/G-League Player")
      
         elif choice == '15':
@@ -356,19 +356,19 @@ try:
                     for x in player.items():
                         print(x)
             print("\nRanking:")
-            if player_PER[8] >= 30.0:
+            if player_PER[15] >= 30.0:
                 print("All-Time Great")
-            elif player_PER[8] >= 27.5:
+            elif player_PER[15] >= 27.5:
                 print("MVP Candidate")
-            elif player_PER[8] >= 25.0:
+            elif player_PER[15] >= 25.0:
                 print("Strong All-Star")
-            elif player_PER[8] >= 20.0:
+            elif player_PER[15] >= 20.0:
                 print("All-Star Boarder")
-            elif player_PER[8] >= 15.0:
+            elif player_PER[15] >= 15.0:
                 print("League Average")
-            elif player_PER[8] >= 10.0:
+            elif player_PER[15] >= 10.0:
                 print("Rotation Player")
-            elif player_PER[8] <= 9.9:
+            elif player_PER[15] <= 9.9:
                 print("Bench Player/G-League Player")
       
         elif choice == '16':
@@ -377,19 +377,19 @@ try:
                     for x in player.items():
                         print(x)
             print("\nRanking:")
-            if player_PER[8] >= 30.0:
+            if player_PER[16] >= 30.0:
                 print("All-Time Great")
-            elif player_PER[8] >= 27.5:
+            elif player_PER[16] >= 27.5:
                 print("MVP Candidate")
-            elif player_PER[8] >= 25.0:
+            elif player_PER[16] >= 25.0:
                 print("Strong All-Star")
-            elif player_PER[8] >= 20.0:
+            elif player_PER[16] >= 20.0:
                 print("All-Star Boarder")
-            elif player_PER[8] >= 15.0:
+            elif player_PER[16] >= 15.0:
                 print("League Average")
-            elif player_PER[8] >= 10.0:
+            elif player_PER[16] >= 10.0:
                 print("Rotation Player")
-            elif player_PER[8] <= 9.9:
+            elif player_PER[16] <= 9.9:
                 print("Bench Player/G-League Player")
       
         elif choice == '17':
@@ -398,19 +398,19 @@ try:
                     for x in player.items():
                         print(x)
             print("\nRanking:")
-            if player_PER[8] >= 30.0:
+            if player_PER[17] >= 30.0:
                 print("All-Time Great")
-            elif player_PER[8] >= 27.5:
+            elif player_PER[17] >= 27.5:
                 print("MVP Candidate")
-            elif player_PER[8] >= 25.0:
+            elif player_PER[17] >= 25.0:
                 print("Strong All-Star")
-            elif player_PER[8] >= 20.0:
+            elif player_PER[17] >= 20.0:
                 print("All-Star Boarder")
-            elif player_PER[8] >= 15.0:
+            elif player_PER[17] >= 15.0:
                 print("League Average")
-            elif player_PER[8] >= 10.0:
+            elif player_PER[17] >= 10.0:
                 print("Rotation Player")
-            elif player_PER[8] <= 9.9:
+            elif player_PER[17] <= 9.9:
                 print("Bench Player/G-League Player")
       
         elif choice == '18':
