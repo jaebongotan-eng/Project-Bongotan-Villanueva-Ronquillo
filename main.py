@@ -54,7 +54,7 @@ try:
         choice = input("\nEnter the rank of the player you want to examine in the top 25 (type 'exit' to leave the search engine): ")
 # Multiple Choice System
         if choice == 'exit':
-            sys.exit()
+            break
      
         elif choice == '1':
             for player in data:
