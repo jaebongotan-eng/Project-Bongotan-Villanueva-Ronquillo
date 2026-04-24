@@ -9,10 +9,22 @@ try:
         print("| WELCOME TO BASKETBALL PLAYER STATISTICS RANKER                                                                         |")
         print("|------------------------------------------------------------------------------------------------------------------------|")
         print("| THIS PROGRAM HELPS YOU EXAMINE THE TOP 25 PLAYERS IN THE NBA RIGHT NOW.                                                |")
-        print("| THE PROGRAM WILL ASK YOU TO INPUT A RANK OF A PLAYER OUT OF 25.                                                        |")
-        print("| THE PROGRAM WILL THEN PRINT THE STATISTICS OF THAT PLAYER INCLUDING HIS PERFORMANCE EFFICIENCY RATING AND HIS NAME.    |")
-        print("| THE PROGRAM WILL THEN RANK THE PLAYER ACCORDING TO THE PLAYER'S PERFORMANCE EFFICIENCY RATING.                         |")
+        print("| THE PROGRAM WILL ASK YOU TO INPUT A CHOICE.                                                                            |")
+        print("| EXAMINE A SPECIFIC NBA PLAYER'S STATS, THE AVERAGE STATS OF THE TOP 25 PLAYERS, OR RANK THE PLAYERS BY A CHOSEN STAT.  |")
+        print("| IF YOU CHOSE TO EXAMINE A SPECIFIC NBA PLAYER'S STATS, THE FOLLOWING WILL HAPPEN:                                      |")
+        print("|     THE PROGRAM WILL ASK YOU TO INPUT A RANK OF A PLAYER OUT OF 25.                                                    |")
+        print("|     THE PROGRAM WILL THEN PRINT THE STATISTICS OF THAT PLAYER INCLUDING HIS PERFORMANCE EFFICIENCY RATING AND HIS NAME.|")
+        print("|     THE PROGRAM WILL THEN RANK THE PLAYER ACCORDING TO THE PLAYER'S PERFORMANCE EFFICIENCY RATING.                     |")
+        print("| IF YOU CHOOSE THE SECOND OPTION, THE PROGRAM WILL PRINT THE AVERAGE STATISTICS OF THE TOP 25 PLAYERS (AVERAGE PTS,ETC.)|")
+        print("| IF YOU CHOOSE THE THIRD OPTION, YOU'LL BE ASKED TO SELECT A STAT FOR RANKING (PTS,REB,TOV,ETC...)                      |")
+        print("|     YOU THE PROGRAM WILL THEN DISPLAY THE NAMES OF PLAYERS RANKED IN ORDER ACCORDING TO THE STAT.                      |")
         print("|------------------------------------------------------------------------------------------------------------------------|")
+
+    def player_ranking(player):
+        players = player[choice-1]
+        print players
+    
+
 # Uploading the JSON data to an empty list
     player_rank = []
     for player in data:
