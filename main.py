@@ -1,17 +1,15 @@
-#Import the json File.
+#   Importing JSON file
 import json
 
-#Create a function that displays the chosen player's stats.
-def player_ranking(data, choice):
-    players = data[choice - 1]
+def player_stats(data, choice): # Function: Displays chosen player stats
+    player = data[choice - 1]
     print("PLAYER STATS")
     print("=" * 60)
 
-    for key, value in players.items():
+    for key, value in player.items():
         print(f"{key}:{value}")
 
-#Create a function that ranks the chosen player according to their Performance Efficiency Rating.
-def player_per(data,choice):
+def player_per_ranker(data,choice): # Function: PER Ranker
     print("PLAYER RANKING (ACCORDING TO PER)")
     print("=" * 60)
     if data[choice-1]["PER"] >= 30.0:
@@ -29,80 +27,14 @@ def player_per(data,choice):
     elif data[choice-1]["PER"] <= 9.9:
         print("Bench Player/G-League Player")
 
-#Create a function that displays the top 25 players ranked according to Points.
-def player_pts(data):
-    sorted_data=sorted(data, key=lambda player: player["Pts"], reverse=True)#Sort ranks the points in ascending order but reverse puts it in descending.
-    for rank, player in enumerate(sorted_data, start=1):#Enumerate function adds a counter for the ranking.
-        print(f"{rank}. {player['Name']} = {player['Pts']:.2f} Points")
-
-#Create a function that displays the top 25 players ranked according to Field Goals Made.
-def player_fgm(data):
-    sorted_data=sorted(data, key=lambda player: player["FGM"], reverse=True)
+def player_stat_ranker(data, stat, label): # Function: Stats Ranker
+    sorted_data = sorted(data, key=lambda player: player.get(stat, 0), reverse=True)
+    print(f"RANKING ACCORDING TO {label.upper()}")
+    print("=" * 60)
     for rank, player in enumerate(sorted_data, start=1):
-        print(f"{rank}. {player['Name']} = {player['FGM']:.2f} Field Goals")
+        print(f"{rank}. {player['Name']} = {player.get(stat, 0):.2f} {label}")
 
-#Create a function that displays the top 25 players ranked according to Field Goals Attempted.
-def player_fga(data):
-    sorted_data=sorted(data, key=lambda player: player["FGA"], reverse=True)
-    for rank, player in enumerate(sorted_data, start=1):
-        print(f"{rank}. {player['Name']} = {player['FGA']:.2f} Field Goals")
-
-#Create a function that displays the top 25 players ranked according to Free Throws Attempted.
-def player_fta(data):
-    sorted_data=sorted(data, key=lambda player: player["FTA"], reverse=True)
-    for rank, player in enumerate(sorted_data, start=1):
-        print(f"{rank}. {player['Name']} = {player['FTA']:.2f} Free Throws")
-
-#Create a function that displays the top 25 players ranked according to Free Throws Made.
-def player_ftm(data):
-    sorted_data=sorted(data, key=lambda player: player["FTM"], reverse=True)
-    for rank, player in enumerate(sorted_data, start=1):
-        print(f"{rank}. {player['Name']} = {player['FTM']:.2f} Free Throws")
-
-#Create a function that displays the top 25 players ranked according to Rebounds.
-def player_reb(data):
-    sorted_data=sorted(data, key=lambda player: player["REB"], reverse=True)
-    for rank, player in enumerate(sorted_data, start=1):
-        print(f"{rank}. {player['Name']} = {player['REB']:.2f} Rebounds")
-
-#Create a function that displays the top 25 players ranked according to Assists.
-def player_ast(data):
-    sorted_data=sorted(data, key=lambda player: player["AST"], reverse=True)
-    for rank, player in enumerate(sorted_data, start=1):
-        print(f"{rank}. {player['Name']} = {player['AST']:.2f} Assists")
-
-#Create a function that displays the top 25 players ranked according to Steals.
-def player_stl(data):
-    sorted_data=sorted(data, key=lambda player: player["STL"], reverse=True)
-    for rank, player in enumerate(sorted_data, start=1):
-        print(f"{rank}. {player['Name']} = {player['STL']:.2f} Steals")
-
-#Create a function that displays the top 25 players ranked according to Blocks.
-def player_blk(data):
-    sorted_data=sorted(data, key=lambda player: player["BLK"], reverse=True)
-    for rank, player in enumerate(sorted_data, start=1):
-        print(f"{rank}. {player['Name']} = {player['BLK']:.2f} Blocks")
-
-#Create a function that displays the top 25 players ranked according to Turnovers
-def player_tov(data):
-    sorted_data=sorted(data, key=lambda player: player["TOV"], reverse=True)
-    for rank, player in enumerate(sorted_data, start=1):
-        print(f"{rank}. {player['Name']} = {player['TOV']:.2f} Turnovers")
-
-#Create a function that displays the top 25 players ranked according to Minutes per game.
-def player_min(data):
-    sorted_data=sorted(data, key=lambda player: player["MIN"], reverse=True)
-    for rank, player in enumerate(sorted_data, start=1):
-        print(f"{rank}. {player['Name']} = {player['MIN']:.2f} Minutes")
-
-#Create a function that displays the top 25 players ranked according to Player Efficiency Rating.
-def player_per2(data):
-    sorted_data=sorted(data, key=lambda player: player["PER"], reverse=True)
-    for rank, player in enumerate(sorted_data, start=1):
-        print(f"{rank}. {player['Name']} = {player['PER']:.2f}")
-
-#Create a function that gets and displays the average stats of all the top 25 players in the NBA.
-def player_average(data):
+def player_stat_average(data): # Function: Displays the average player stats
     total_pts = sum((player["Pts"]) for player in data)
     average_pts = total_pts / len(data)
     total_fgm = sum((player["FGM"]) for player in data)
@@ -141,13 +73,29 @@ def player_average(data):
     print(f"Average Minutes played: {average_min:.2f} Minutes")
     print(f"Average Performance Efficiency Rating: {average_per:.2f}")
 
-#Load the json file.
+# Stat dictionary
+StatRankerDictionary = {
+    1: ("Pts", "Points"),
+    2: ("FGM", "Field Goals Made"),
+    3: ("FGA", "Field Goals Attempted"),
+    4: ("FTA", "Free Throws Attempted"),
+    5: ("FTM", "Free Throws Made"),
+    6: ("REB", "Rebounds"),
+    7: ("AST", "Assists"),
+    8: ("STL", "Steals"),
+    9: ("BLK", "Blocks"),
+    10: ("TOV", "Turnovers"),
+    11: ("MIN", "Minutes"),
+    12: ("PER", "PER")
+}
+
+# Loading JSON file
 try:
     filename = "statistics.json"
     with open(filename,'r') as file:
         # Loading the JSON file
         data = json.load(file)
-#Menu
+# Menu
         print("|------------------------------------------------------------------------------------------------------------------------|")
         print("| WELCOME TO BASKETBALL PLAYER STATISTICS RANKER!                                                                         |")
         print("|------------------------------------------------------------------------------------------------------------------------|")
@@ -168,7 +116,7 @@ try:
         print("|     THE PROGRAM WILL THEN DISPLAY THE NAMES OF PLAYERS RANKED IN ORDER ACCORDING TO THE STAT.                          |")
         print("|------------------------------------------------------------------------------------------------------------------------|")
 
-#Ask the user for choices
+# Choice statements
     print("\nEnter 1 if you want to examine a specific player")
     print("Enter 2 if you want to get the top 25 players in the NBA according to a specific stat")
     print("Enter 3 if you want to get the average stats of the top 25 players in the NBA")
@@ -177,7 +125,7 @@ try:
         try:
             choice_one= int(input("\nEnter your choice (1-3): (type 0 to exit) "))
 
-#Add conditional function to identify the user's choice
+# Decision-Making statements
             if choice_one == 0:
                 break
 
@@ -190,16 +138,16 @@ try:
                             break
 
                         elif 0 < choice <= 25:
-                            player_ranking(data, choice)
+                            player_stats(data, choice)
                             print("")
-                            player_per(data,choice)
+                            player_per_ranker(data,choice)
 
                         else:
                             print("Please enter 1-25 or 0 to return ")
 
 
                     except ValueError:
-                        print("Invalid! Please enter a digit or 0 to return ")
+                        print("Invalid, Please enter a digit or 0 to return ")
 
 
             elif choice_one == 2:
@@ -224,78 +172,20 @@ try:
                         if choice == 0:
                             break
 
-                        if choice == 1:
-                            print("RANKING ACCORDING TO POINTS")
-                            print("="*60)
-                            player_pts(data)
-
-                        elif choice == 2:
-                            print("RANKING ACCORDING TO FIELD GOALS MADE")
-                            print("="*60)
-                            player_fgm(data)
-
-                        elif choice == 3:
-                            print("RANKING ACCORDING TO FIELD GOALS ATTEMPTED")
-                            print("="*60)
-                            player_fga(data)
-
-                        elif choice == 4:
-                            print("RANKING ACCORDING TO FREE THROWS ATTEMPTED")
-                            print("="*60)
-                            player_fta(data)
-
-                        elif choice == 5:
-                            print("RANKING ACCORDING TO FREE THROWS MADE")
-                            print("="*60)
-                            player_ftm(data)
-
-                        elif choice == 6:
-                            print("RANKING ACCORDING TO REBOUNDS")
-                            print("="*60)
-                            player_reb(data)
-
-                        elif choice == 7:
-                            print("RANKING ACCORDING TO ASSISTS")
-                            print("="*60)
-                            player_ast(data)
-
-                        elif choice == 8:
-                            print("RANKING ACCORDING TO STEALS")
-                            print("="*60)
-                            player_stl(data)
-
-                        elif choice == 9:
-                            print("RANKING ACCORDING TO BLOCKS")
-                            print("="*60)
-                            player_blk(data)
-
-                        elif choice == 10:
-                            print("RANKING ACCORDING TO TURNOVERS")
-                            print("="*60)
-                            player_tov(data)
-
-                        elif choice == 11:
-                            print("RANKING ACCORDING TO MINUTES PLAYED")
-                            print("="*60)
-                            player_min(data)
-
-                        elif choice == 12:
-                            print("RANKING ACCORDING TO PLAYER EFFICIENCY RATING")
-                            print("="*60)
-                            player_per2(data)
-
+                        if choice in StatRankerDictionary:
+                            stat, label = StatRankerDictionary[choice]
+                            player_stat_ranker(data, stat, label)
                         else:
-                            print("INVALID (enter 1-12 only) or enter 0 to return")
-
+                            print("Invalid, (enter 1-12 only) or enter 0 to return")
 
                     except ValueError:
-                        print("Invalid! please enter a digit (1-12) or 0 to return")
+                        print("Invalid, please enter a digit (1-12) or 0 to return")
 
 
             elif choice_one == 3:
                 print("AVERAGE STATS")
                 print("="*60)
-                player_average(data)
+                player_stat_average(data)
 
         except ValueError:
                 print("Invalid! please enter 1-3 (enter 0 to exit)")
