@@ -32,73 +32,73 @@ def player_per(data,choice):
 #Create a function that displays the top 25 players ranked according to Points.
 def player_pts(data):
     sorted_data=sorted(data, key=lambda player: player["Pts"], reverse=True)#Sort ranks the points in ascending order but reverse puts it in descending.
-    for rank, player in enumerate(data, start=1):#Enumerate function adds a counter for the ranking.
+    for rank, player in enumerate(sorted_data, start=1):#Enumerate function adds a counter for the ranking.
         print(f"{rank}. {player['Name']} = {player['Pts']:.2f} Points")
 
 #Create a function that displays the top 25 players ranked according to Field Goals Made.
 def player_fgm(data):
     sorted_data=sorted(data, key=lambda player: player["FGM"], reverse=True)
-    for rank, player in enumerate(data, start=1):
+    for rank, player in enumerate(sorted_data, start=1):
         print(f"{rank}. {player['Name']} = {player['FGM']:.2f} Field Goals")
 
 #Create a function that displays the top 25 players ranked according to Field Goals Attempted.
 def player_fga(data):
     sorted_data=sorted(data, key=lambda player: player["FGA"], reverse=True)
-    for rank, player in enumerate(data, start=1):
+    for rank, player in enumerate(sorted_data, start=1):
         print(f"{rank}. {player['Name']} = {player['FGA']:.2f} Field Goals")
 
 #Create a function that displays the top 25 players ranked according to Free Throws Attempted.
 def player_fta(data):
     sorted_data=sorted(data, key=lambda player: player["FTA"], reverse=True)
-    for rank, player in enumerate(data, start=1):
+    for rank, player in enumerate(sorted_data, start=1):
         print(f"{rank}. {player['Name']} = {player['FTA']:.2f} Free Throws")
 
 #Create a function that displays the top 25 players ranked according to Free Throws Made.
 def player_ftm(data):
     sorted_data=sorted(data, key=lambda player: player["FTM"], reverse=True)
-    for rank, player in enumerate(data, start=1):
+    for rank, player in enumerate(sorted_data, start=1):
         print(f"{rank}. {player['Name']} = {player['FTM']:.2f} Free Throws")
 
 #Create a function that displays the top 25 players ranked according to Rebounds.
 def player_reb(data):
     sorted_data=sorted(data, key=lambda player: player["REB"], reverse=True)
-    for rank, player in enumerate(data, start=1):
+    for rank, player in enumerate(sorted_data, start=1):
         print(f"{rank}. {player['Name']} = {player['REB']:.2f} Rebounds")
 
 #Create a function that displays the top 25 players ranked according to Assists.
 def player_ast(data):
     sorted_data=sorted(data, key=lambda player: player["AST"], reverse=True)
-    for rank, player in enumerate(data, start=1):
+    for rank, player in enumerate(sorted_data, start=1):
         print(f"{rank}. {player['Name']} = {player['AST']:.2f} Assists")
 
 #Create a function that displays the top 25 players ranked according to Steals.
 def player_stl(data):
     sorted_data=sorted(data, key=lambda player: player["STL"], reverse=True)
-    for rank, player in enumerate(data, start=1):
+    for rank, player in enumerate(sorted_data, start=1):
         print(f"{rank}. {player['Name']} = {player['STL']:.2f} Steals")
 
 #Create a function that displays the top 25 players ranked according to Blocks.
 def player_blk(data):
     sorted_data=sorted(data, key=lambda player: player["BLK"], reverse=True)
-    for rank, player in enumerate(data, start=1):
+    for rank, player in enumerate(sorted_data, start=1):
         print(f"{rank}. {player['Name']} = {player['BLK']:.2f} Blocks")
 
 #Create a function that displays the top 25 players ranked according to Turnovers
 def player_tov(data):
     sorted_data=sorted(data, key=lambda player: player["TOV"], reverse=True)
-    for rank, player in enumerate(data, start=1):
+    for rank, player in enumerate(sorted_data, start=1):
         print(f"{rank}. {player['Name']} = {player['TOV']:.2f} Turnovers")
 
 #Create a function that displays the top 25 players ranked according to Minutes per game.
 def player_min(data):
     sorted_data=sorted(data, key=lambda player: player["MIN"], reverse=True)
-    for rank, player in enumerate(data, start=1):
+    for rank, player in enumerate(sorted_data, start=1):
         print(f"{rank}. {player['Name']} = {player['MIN']:.2f} Minutes")
 
 #Create a function that displays the top 25 players ranked according to Player Efficiency Rating.
 def player_per2(data):
     sorted_data=sorted(data, key=lambda player: player["PER"], reverse=True)
-    for rank, player in enumerate(data, start=1):
+    for rank, player in enumerate(sorted_data, start=1):
         print(f"{rank}. {player['Name']} = {player['PER']:.2f}")
 
 #Create a function that gets and displays the average stats of all the top 25 players in the NBA.
